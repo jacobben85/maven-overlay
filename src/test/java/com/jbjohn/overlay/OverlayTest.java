@@ -10,6 +10,6 @@ public class OverlayTest {
     @Test
     public void testProcess() throws Exception {
         Overlay overlay = new Overlay();
-        overlay.process();
+        overlay.process("test");
     }
 }

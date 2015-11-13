@@ -7,15 +7,15 @@ class Overlay {
 
     public static void main(String[] args) {
 
+        Overlay overlay = new Overlay();
+
         for (String arg : args) {
-            System.out.println(arg);
+            overlay.process(arg);
         }
 
-        Overlay overlay = new Overlay();
-        overlay.process();
     }
 
-    public void process() {
-        System.out.println("processing overlay");
+    public void process(String arg) {
+        System.out.println("Argument received : " + arg);
     }
 }
